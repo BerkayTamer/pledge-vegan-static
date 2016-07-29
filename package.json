@@ -1,0 +1,22 @@
+{
+  "name": "pledge-vegan-static",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BerkayTamer/pledge-vegan-static.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BerkayTamer/pledge-vegan-static/issues"
+  },
+  "homepage": "https://github.com/BerkayTamer/pledge-vegan-static#readme",
+  "dependencies": {
+    "request": "^2.74.0"
+  }
+}
