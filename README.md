@@ -1,0 +1,1 @@
+# pledge-vegan-static
