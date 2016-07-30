@@ -28,12 +28,3 @@ fs.readFile('quotes.twig', 'utf8', function(err, contents) {
     });
 
 });
-
-
-
-/*
-
-
-*/
-
-
