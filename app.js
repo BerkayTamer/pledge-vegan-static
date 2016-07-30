@@ -1,18 +1,39 @@
 var request = require('request');
 var fs = require('fs');
+var Twig = require('twig');
+var twig = Twig.twig;
 
-request('https://berkaytamer.github.io/top-vegan-quotes/api.json', function (error, response, data) {
-    if (!error && response.statusCode == 200) {
-        var authors = [];
-        var data = JSON.parse(data);
 
-        Object.keys(data).forEach(function(key) {
-            authors.push(data[key].author);
-        });
+fs.readFile('quotes.twig', 'utf8', function(err, contents) {
 
-        fs.writeFile('index.html', authors, function (err) {
-            if (err) throw err;
-            console.log('Good job Berks');
-        });
-    }
+    var template = twig({
+        data: contents
+    });
+
+
+    request('https://berkaytamer.github.io/top-vegan-quotes/api.json', function (error, response, data) {
+        if (!error && response.statusCode == 200) {
+
+            templateData = {};
+            templateData.quotes = JSON.parse(data);
+
+            var renderedTemplate = template.render(templateData);
+
+            fs.writeFile('index.html', renderedTemplate, function (err) {
+                if (err) throw err;
+
+            });
+
+        }
+    });
+
 });
+
+
+
+/*
+
+
+*/
+
+

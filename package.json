@@ -18,6 +18,7 @@
   "homepage": "https://github.com/BerkayTamer/pledge-vegan-static#readme",
   "dependencies": {
     "express": "^4.14.0",
-    "request": "^2.74.0"
+    "request": "^2.74.0",
+    "twig": "^0.9.5"
   }
 }

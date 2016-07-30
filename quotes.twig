@@ -1,0 +1,31 @@
+<div class="quote-listing">
+
+    {% for quote in quotes %}
+
+        <div class="quote-listing__item text-centered--max-large">
+            <a class="quote-listing__image" href="#">
+                <div style="overflow: hidden;" class="circle-image--large"> <img src="{{ quote.image }}" width="120" height="120" typeof="foaf:Image" class="image-style-medium-small">
+                </div>
+            </a>
+            <div class="quote-listing__body">
+                {{ quote.preview }}
+                <a href="/vegans/johnny-depp">
+                    ~ {{ quote.author }}</a>
+                <div class="quote-listing__meta">
+                    <div>
+                        <a class="icon--term-1" href="/vegan-spotlight/top-100-vegan-quotes/1">{{ quote.category }}</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    {% endfor %}
+
+
+</div>
+
+
+
+
+
