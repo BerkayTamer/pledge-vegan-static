@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/BerkayTamer/pledge-vegan-static#readme",
   "dependencies": {
+    "pledge-vegan-styleguide": "git+https://git@github.com/rcaracaus/pledge-vegan-styleguide.git",
     "express": "^4.14.0",
     "request": "^2.74.0",
     "twig": "^0.9.5"

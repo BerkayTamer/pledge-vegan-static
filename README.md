@@ -1,7 +1,9 @@
 # pledge-vegan-static
 
-We've created a system that makes everything easier!
+If you run the code with "node app.js" on terminal, 
 
-app.js is using quotes.twig to write the code to index.html
+the code we wrote will create an index.html file 
 
-You run the code with "node app.js"
+and convert md files to json files 
+
+by using the quotes.twig file.
