@@ -2,8 +2,8 @@
 
 If you run the code with "node app.js" on terminal, 
 
-the code we wrote will create an index.html file 
+the code we wrote on app.js will replace the old index.html with the new one (or create a new one if it doesn't exist)
 
-and convert md files to json files 
+and convert md files to json files and put the output on index.html 
 
-by using the quotes.twig file.
+in style that is designed on the quotes.twig file.
