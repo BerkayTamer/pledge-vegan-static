@@ -6,4 +6,4 @@ the code we wrote on app.js will replace the old index.html with the new one (or
 
 and convert md files to json files and put the output on index.html 
 
-in style that is designed on the quotes.twig file.
+with a style that is designed on the quotes.twig file.
